@@ -48,8 +48,31 @@ $(document).ready(function() {
           height: '100%',
         }, 300000);
       }
-    else if (currentHour >= 9)
+    else if (currentHour == 18)
     {
+        $('body').css('background-color', 'rgb(0, 204, 255)');
+        $('#container').animate({
+          height: '10%',
+        }, 30000);
+      }
+    else if (currentHour == 19)
+    {
+        $('body').css('background-color', 'rgb(0, 0, 179)');
+        $('#container').animate({
+          height: '2%',
+        }, 50000);
+      }
+    else if (currentHour == 20)
+    {
+        $('body').css('background-color', 'black');
+        $('#container').hide()
+      }
+    else if (currentHour >= 21 && currentHour <= 4)
+    {
+        $('body').css('background-color', 'rgb(0, 102, 255)');
+        $('#container').hide()
+      }
+      else {
         $('body').css('background-color', 'rgb(0, 204, 255)');
         $('#container').height('100%');
         $('.box01').css('background', 'rgb(255, 45, 146)');
@@ -62,31 +85,5 @@ $(document).ready(function() {
         $('.box08').css('background', 'rgb(255, 45, 146)');
         $('.box09').css('background', 'rgb(255, 224, 0)');
         $('.box10').css('background', 'rgb(0, 222, 57)');
-      }
-      else if (currentHour == 12)
-    {
-        $('body').css('background-color', 'rgb(128, 229, 255)');
-      }
-    else if (currentHour == 19)
-    {
-        $('body').css('background-color', 'rgb(0, 204, 255)');
-        $('#container').animate({
-          height: '10%',
-        }, 300000);
-      }
-    else if (currentHour == 20)
-    {
-        $('body').css('background-color', 'rgb(0, 204, 255)');
-        $('#container').animate({
-          height: '2%',
-        }, 50000);
-      }
-    else if (currentHour == 21)
-    {
-        $('body').css('background-color', 'rgb(0, 102, 255)');
-        $('#container').hide()
-      }
-    else {
-        $('body').css('background-color', 'black'); 
       }
 });

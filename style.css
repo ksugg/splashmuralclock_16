@@ -21,6 +21,7 @@ body {
 
 #clock {
   font-size: 100px;
+  font-weight: 500;
   color: white;
   margin-left: 35%;
   margin-top: 20%;
